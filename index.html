@@ -6,27 +6,60 @@
     <title>LOGO</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Sen:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c5afe1f91e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="nav">
-        <div class="nav__logo">
-            <a href="">
-                <img src="img/logo.svg" alt="logo">
+        <div class="nav__wrapper container">
+            <div class="nav__logo">
+                <a href="">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__element">
+                    <a class="nav__link" href="#ico">ICO</a>
+                </li>
+                <li class="nav__element">
+                    <a class="nav__link" href="#team">Team</a>
+                </li>
+                <li class="nav__element">
+                    <a class="nav__link" href="">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="header" id="ico">
+        <img class="header__background header__background--l" src="img/background-l@1x.svg" alt="">
+        <img class="header__background header__background--m" src="img/background-m@1x.svg" alt="">
+        <img class="header__background header__background--s" src="img/background-s@1x.svg" alt="">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="heading">
+                    <h1 class="heading__title">The first fully-automatic social crypto trading platform with real crypto currency</h1>
+                    <p class="heading__newsletter">Subscribe and get the lastes information</p>
+                    <form>
+                        <input class="heading__form heading__form--email" type="email" placeholder="Enter your email">
+                        <input class="heading__form heading__form--btn" type="submit" value="Subscribe">
+                    </form>
+                </div>
+                <div>
+                    <div class="video">
+                        <img class="video__img" src="./img/video@1x.png" srcset="./img/video@1x.png, ./img/video@2x.png 2x">
+                        <button class="video__btn"><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+            </div>
+            <a href="#team" class="header__btn">
+                <img src="./img/arrow-down.svg" alt="arrow down">
             </a>
         </div>
-        <ul class="nav__list">
-            <li class="nav__element">
-                <a class="nav__link" href="">ICO</a>
-            </li>
-            <li class="nav__element">
-                <a class="nav__link" href="">Team</a>
-            </li>
-            <li class="nav__element">
-                <a class="nav__link" href="">Contact</a>
-            </li>
-            <div class="action"></div>
-        </ul>
-    </nav>
+    </section>
+
+    <section class="team" id="team">
+
+    </section>
 
     <script src="js/script.js"></script>
 </body>

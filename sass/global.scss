@@ -1,4 +1,5 @@
 $color-white: #fff;
+$color-light-blue: #38A5DB;
 $color-blue: #5454D4;
 $color-dark-blue: #1C2085;
 
@@ -9,4 +10,9 @@ $font-open-sans: 'Open Sans', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+a, input, button {
+    outline: none;
+    cursor: pointer;
 }
