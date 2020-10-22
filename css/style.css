@@ -30,9 +30,7 @@ body::-webkit-scrollbar { display: none; }
 
 .nav__link { position: relative; padding: 4px; font-size: 16px; color: #1C2085; }
 
-.nav__link:after { content: ""; position: absolute; top: 13px; left: 0; width: 100%; height: 2px; background: #5454D4; transition: all 0.2s; -webkit-transition: all 0.2s; -o-transition: all 0.2s; -ms-transition: all 0.2s; -moz-transition: all 0.2s; opacity: 0; }
-
-.nav__link:hover:after { transform: translateY(16px); opacity: 1; }
+.nav__link:after { content: ""; position: absolute; top: 13px; left: 0; width: 100%; height: 2px; background: #5454D4; transition: all 0.2s; opacity: 0; }
 
 .nav__link--active:after { transform: translateY(16px); opacity: 1; }
 
@@ -74,7 +72,7 @@ body::-webkit-scrollbar { display: none; }
 
 .header__btn:hover { background-color: #38A5DB; border-color: #38A5DB; }
 
-.team { margin-top: -65px; padding-top: 70px; }
+.team { margin-top: 5px; }
 
 .team__title { font-size: 16px; font-weight: 400; letter-spacing: 12px; text-transform: uppercase; color: #1C2085; text-align: center; }
 
@@ -106,7 +104,7 @@ body::-webkit-scrollbar { display: none; }
 
 .slider__dots { display: none; }
 
-.contact { margin-top: 93px; padding: 95px 0 55px; background-color: #252B42; }
+.contact { margin-top: 88px; padding: 95px 0 55px; background-color: #252B42; }
 
 .contact__title { text-align: center; font-size: 16px; font-weight: 400; color: #fff; text-transform: uppercase; letter-spacing: 12px; }
 
@@ -206,8 +204,8 @@ body::-webkit-scrollbar { display: none; }
   .video { margin: 297px 0 0 0; }
   .video__img { width: auto; }
   .header__btn { position: absolute; top: 550px; left: 50%; transform: translateX(-50%); margin: 0; }
-  .header__btn:hover { border-color: #fff; background-color: none; }
-  .team { padding-top: 75px; margin-top: -10px; }
+  .header__btn:hover { border-color: #fff; background: none; }
+  .team { margin-top: 65px; }
   .team__slider { width: 100%; margin-top: 36px; -ms-flex-pack: start; justify-content: flex-start; overflow-x: scroll; -ms-scroll-snap-type: x mandatory; scroll-snap-type: x mandatory; scroll-behavior: smooth; }
   .team__slider::-webkit-scrollbar { display: none; }
   .slider__element:nth-child(1) { scroll-snap-align: start; }
@@ -265,7 +263,7 @@ body::-webkit-scrollbar { display: none; }
   .video { margin-top: 200px; }
   .video__img { width: 100%; }
   .video__btn { height: 32px; width: 32px; font-size: 10px; }
-  .team { padding-top: 66px; margin-top: -20px; }
+  .team { margin-top: 46px; }
   .team__slider { margin-top: 32px; }
   .employee__img { height: 115px; width: 115px; }
   .employee__name { font-size: 16px; margin-top: 11px; }

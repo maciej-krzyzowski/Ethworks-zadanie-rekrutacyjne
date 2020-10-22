@@ -80,16 +80,7 @@ body {
         height: 2px;
         background: $color-blue;
         transition: all 0.2s;
-        -webkit-transition: all 0.2s;
-        -o-transition: all 0.2s;
-        -ms-transition: all 0.2s;
-        -moz-transition: all 0.2s;
         opacity: 0;
-    }
-    
-    &:hover:after {
-        transform: translateY(16px);
-        opacity: 1;
     }
 
     &--active:after {
@@ -226,8 +217,7 @@ body {
 }
 
 .team {
-    margin-top: -65px;
-    padding-top: 70px;
+    margin-top: 5px;
 }
 
 .team__title {
@@ -335,7 +325,7 @@ body {
 }
 
 .contact {
-    margin-top: 93px;
+    margin-top: 88px;
     padding: 95px 0 55px;
     background-color: $color-dark-blue;
 }
@@ -732,13 +722,12 @@ body {
 
         &:hover {
             border-color: $color-white;
-            background-color: none;
+            background: none;
         }
     }
 
     .team {
-        padding-top: 75px;
-        margin-top: -10px;
+        margin-top: 65px;
     }
 
     .team__slider {
@@ -996,8 +985,7 @@ body {
     }
 
     .team {
-        padding-top: 66px;
-        margin-top: -20px;
+        margin-top: 46px;
     }
 
     .team__slider {
