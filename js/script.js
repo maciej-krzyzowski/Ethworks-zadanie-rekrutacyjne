@@ -34,30 +34,23 @@ const closeModal = () => {
     modalChildren.innerHTML = '';
 }
 
-const removeActiveLink = () => {
-    for(let item of navLinks) {
-        item.classList.remove('nav__link--active');
-    };
-}
-
 const action = () => {
+    document.querySelectorAll('a[href^="#"]').forEach(navLink => {
+        navLink.addEventListener('click', function (e) {
+          e.preventDefault();
 
-    navLinks.forEach(navLink => {
-      navLink.addEventListener('click', function (e) {
-        e.preventDefault();
+            const activeLink = document.querySelector('.nav__link--active')
+            const targetElement = document.querySelector(this.getAttribute('href'));
+            const calculatedOffset = targetElement.offsetTop + offsetModifier;
 
-        const activeLink = document.querySelector('.nav__link--active')
-        const targetElement = document.querySelector(this.getAttribute('href'));
-        const calculatedOffset = targetElement.offsetTop + offsetModifier;
+            activeLink.classList.remove('nav__link--active');
+            navLink.classList.add('nav__link--active');
 
-        activeLink.classList.remove('nav__link--active');
-        navLink.classList.add('nav__link--active');
-
-        window.scrollTo({
-            top: calculatedOffset,
-            behavior: 'smooth'
+            window.scrollTo({
+                top: calculatedOffset,
+                behavior: 'smooth'
+            });
         });
-      });
     });
 
     window.addEventListener('scroll', () => {
