@@ -1,12 +1,9 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-a, input, button {
-  outline: none;
-  cursor: pointer;
-}
+html { scroll-behavior: smooth; }
 
-/*# sourceMappingURL=global.css.map */
+a, input, button { outline: none; cursor: pointer; text-decoration: none; appearance: none; }
+
+li { text-decoration: none; list-style-type: none; }
+
+iframe { max-width: 90%; }

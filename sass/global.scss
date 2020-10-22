@@ -1,7 +1,13 @@
 $color-white: #fff;
 $color-light-blue: #38A5DB;
 $color-blue: #5454D4;
-$color-dark-blue: #1C2085;
+$color-navy-blue: #1C2085;
+$color-dark-blue: #252B42;
+$color-gray: #576677;
+$color-black: #011226;
+$color-dark: #174477;
+$color-btn-hover:#0a577e;
+
 
 $font-sen: 'Sen', sans-serif;
 $font-open-sans: 'Open Sans', sans-serif;
@@ -12,7 +18,22 @@ $font-open-sans: 'Open Sans', sans-serif;
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a, input, button {
     outline: none;
     cursor: pointer;
+    text-decoration: none;
+    appearance: none;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+iframe {
+    max-width: 90%;
 }

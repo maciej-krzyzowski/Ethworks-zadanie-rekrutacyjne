@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="LOGO" />
+    <meta property="og:image" content="./img/project.png" />
     <title>LOGO</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Sen:wght@400;700&display=swap" rel="stylesheet">
@@ -10,25 +12,32 @@
 </head>
 <body>
     <nav class="nav">
-        <div class="nav__wrapper container">
+        <div class="nav__wrapper">
             <div class="nav__logo">
-                <a href="">
+                <a href="http://maciejkrzyzowski.pl/ethworks-rekrutacja">
                     <img src="img/logo.svg" alt="logo">
                 </a>
             </div>
             <ul class="nav__list">
                 <li class="nav__element">
-                    <a class="nav__link" href="#ico">ICO</a>
+                    <a class="nav__link nav__link--active" href="#ico">ICO</a>
                 </li>
                 <li class="nav__element">
                     <a class="nav__link" href="#team">Team</a>
                 </li>
                 <li class="nav__element">
-                    <a class="nav__link" href="">Contact</a>
+                    <a class="nav__link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
+
+    <div class="social-media">
+        <ul>
+            <li class="social-media__element"><a class="social-media__link btn" target="_blank" href="https://twitter.com/?lang=pl"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-media__element"><a class="social-media__link btn" target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+        </ul>
+    </div>
 
     <section class="header" id="ico">
         <img class="header__background header__background--l" src="img/background-l@1x.svg" alt="">
@@ -37,17 +46,17 @@
         <div class="container">
             <div class="header__wrapper">
                 <div class="heading">
-                    <h1 class="heading__title">The first fully-automatic social crypto trading platform with real crypto currency</h1>
+                    <h1 class="heading__title">The first fully-automatic social crypto trading platform with real crypto</br> currency</h1>
                     <p class="heading__newsletter">Subscribe and get the lastes information</p>
-                    <form>
-                        <input class="heading__form heading__form--email" type="email" placeholder="Enter your email">
-                        <input class="heading__form heading__form--btn" type="submit" value="Subscribe">
+                    <form novalidate>
+                        <input class="heading__input heading__input--email" type="email" placeholder="Enter your email" maxlength="25">
+                        <input class="heading__input heading__input--btn btn" type="reset" value="Subscribe">
                     </form>
                 </div>
                 <div>
                     <div class="video">
-                        <img class="video__img" src="./img/video@1x.png" srcset="./img/video@1x.png, ./img/video@2x.png 2x">
-                        <button class="video__btn"><i class="fas fa-play"></i></button>
+                        <img class="video__img" src="./img/video@1x.png">
+                        <button class="btn video__btn"><i class="fas fa-play"></i></button>
                     </div>
                 </div>
             </div>
@@ -58,8 +67,127 @@
     </section>
 
     <section class="team" id="team">
-
+        <div class="container">
+            <h3 class="team__title">TEAM</h3>
+            <div class="team__slider">
+                <div class="slider__element">
+                    <div class="employee">
+                        <img class="employee__img" src="./img/employee/edgar-morrison@x1.png" srcset="./img/employee/edgar-morrison@x1.png 1x, ./img/employee/edgar-morrison@x2.png 2x" alt="Edgar Morrison">
+                        <h2 class="employee__name">Edgar Morrison</h2>
+                        <h4 class="employee__position">CEO</h4>
+                        <p class="employee__description">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
+                        <p class="employee__description--full">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                    <div class="employee__social-media">
+                        <a class="employee__social-media--link" target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="employee__social-media--link" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="slider__element">
+                    <div class="employee">
+                        <img class="employee__img" src="./img/employee/mae-martin@x1.png" srcset="./img/employee/mae-martin@x1.png 1x, ./img/employee/mae-martin@x2.png 2x" alt="Mae Martin">
+                        <h2 class="employee__name">Mae Martin</h2>
+                        <h4 class="employee__position">CTO</h4>
+                        <p class="employee__description">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
+                        <p class="employee__description--full">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                    <div class="employee__social-media">
+                        <a class="employee__social-media--link" target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="employee__social-media--link" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="slider__element">
+                    <div class="employee">
+                        <img class="employee__img" src="./img/employee/david-banks@x1.png" srcset="./img/employee/david-banks@x1.png 1x, ./img/employee/david-banks@x2.png 2x" alt="David Banks">
+                        <h2 class="employee__name">David Banks</h2>
+                        <h4 class="employee__position">CFO</h4>
+                        <p class="employee__description">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
+                        <p class="employee__description--full">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                    <div class="employee__social-media">
+                        <a class="employee__social-media--link" target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="employee__social-media--link" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="slider__element">
+                    <div class="employee">
+                        <img class="employee__img" src="./img/employee/frederick-parsons@x1.png" srcset="./img/employee/frederick-parsons@x1.png 1x, ./img/employee/frederick-parsons@x2.png 2x" alt="Frederick Parsons">
+                        <h2 class="employee__name">Frederick Parsons</h2>
+                        <h4 class="employee__position">COO</h4>
+                        <p class="employee__description">Having used discount toner cartridges for twenty years, there have been a lot of changes in the toner...</p>
+                        <p class="employee__description--full">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                    <div class="employee__social-media">
+                        <a class="employee__social-media--link" target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="employee__social-media--link" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__dots">
+                <button class="slider__dot slider__dot--active" id="dot-1"></button>
+                <button class="slider__dot" id="dot-2"></button>
+            </div>
+        </div>
     </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h3 class="contact__title">CONTACT US</h3>
+            <p class="contact__text">Most calendars are designed for teams.</br>Slate is designed for freelancers</p>
+            <form class="contact__form">
+                <input class="contact__input contact__input--name" type="text" placeholder="Your Name" maxlength="20">
+                <input class="contact__input contact__input--email" type="text" placeholder="Your Email" maxlength="25">
+                <label class="contact__label">
+                    <input class="contact__checkbox" type="checkbox" value="checkbox">
+                    <span>Checkbox</span>
+                </label>
+                <input class="contact__input contact__input--btn btn" type="submit" value="Send">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__top">
+                <div class="footer__logo">
+                    <a href="http://maciejkrzyzowski.pl/ethworks-rekrutacja/">
+                        <img src="img/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="footer__email">
+                    <p>Contact us:</p>
+                    <a class="footer__link" href="mailto:have@nicecoding.io" target="_blank">have@nicecoding.io</a>
+                </div>
+                <div>
+                    <button class="footer__btn btn">Read Whitepaper</button>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <ul class="footer__list">
+                    <li class="footer__element footer__element--decoration">
+                        <a class="footer__link" href="">© Copywriters  2020</a>
+                    </li>
+                    <li class="footer__element footer__element--decoration">
+                        <a class="footer__link" href="">FAQ</a>
+                    </li>
+                    <li class="footer__element footer__element--decoration">
+                        <a class="footer__link" href="">Terms of Use</a>
+                    </li>
+                    <li class="footer__element">
+                        <a class="footer__link" href="">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
+
+    <div class="modal">
+        <div class="modal__wrapper">
+            <button class="modal__close"><i class="far fa-times-circle"></i></button>
+            <div class="modal__children"></div>
+        </div>
+    </div>
 
     <script src="js/script.js"></script>
 </body>
